@@ -1,1 +1,91 @@
-
+<!Doctype html>
+<html>
+    <head>
+        <title>Assignment solution for Module 2</title>
+        <h1 style="color: red; text-align: center; font-size: 50px">Our Menu</h1>
+        <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+        }
+        #box1{
+            background-color: pink;
+            width: 300px;
+            height: 100px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        #box2{
+            background-color: orange;
+            width: 300px;
+            height: 100px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        #box3{
+            background-color: green;
+            width: 300px;
+            height: 100px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        @media(min-width: 992px){
+            #box1,#box2,#box3{
+                float: left;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            #box1,#box2,#box3{
+                width: 32%;
+            }
+        }
+        @media(min-width: 768px) and (max-width: 991px){
+            #box1,#box2{
+                float: left;
+                width: 49%;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            #box3{
+                float: left;
+                width: 99%;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        @media(max-width: 767px){
+            #box1{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #box2{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #box3{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <div id="content"><h3 style="color: red; text-align: center; border: 3px solid black;">Chicken</h3>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="content"><h3 style="color: red; text-align: center; border: 3px solid black;">Beef</h3>
+            </div>
+        </div>
+        <div id="box3">
+            <div id="content"><h3 style="color: red; text-align: center; border: 3px solid black;">Sushi</h3>.
+            </div>
+        </div>
+    </body>
+</html>
